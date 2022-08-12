@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BMI Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="BMI.css" rel="stylesheet">
+    </head>
+    <body class="bd">
+        <div class="border border-3 border-dark rounded-4 bg">
+            <h2 class="text-center my-3">BMI Calculator</h2>
+            <section class="text-center my-3">
+                <label for="height">Height in CM:</label>
+                <input type="number" name="height" id="height"><br>
+            </section>
+            <section class="text-center my-3">
+                <label for="weight">Weight in KG:</label>
+                <input type="number" name="weight" id="weight">
+            </section>
+            <section class="text-center my-3">
+                <button type="button" onclick="calculator()" id="cal">Calculate</button>
+                <p id="final" class="my-3"></p>
+                <p id="warn" class="my-3"></p>
+            </section>
+            <script src="./BMI.js"></script>
+        </div>
+    </body>
+</html>
